@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D81D0151DF94BFE003FD705 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D81D0141DF94BFE003FD705 /* Property List.plist */; };
+		3D81D0171DF94C90003FD705 /* KCAPResources.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D81D0161DF94C90003FD705 /* KCAPResources.plist */; };
 		3DBB36E71C4CF7FD009864FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB36E61C4CF7FD009864FD /* AppDelegate.m */; };
 		3DBB36EA1C4CF7FD009864FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB36E91C4CF7FD009864FD /* main.m */; };
 		3DBB36ED1C4CF7FD009864FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB36EC1C4CF7FD009864FD /* ViewController.m */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D81D0141DF94BFE003FD705 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Property List.plist"; path = "../../PListReader/Property List.plist"; sourceTree = "<group>"; };
+		3D81D0161DF94C90003FD705 /* KCAPResources.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KCAPResources.plist; sourceTree = "<group>"; };
 		3DBB36E21C4CF7FD009864FD /* Read_Property_List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Read_Property_List.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBB36E51C4CF7FD009864FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DBB36E61C4CF7FD009864FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				3DBB36EC1C4CF7FD009864FD /* ViewController.m */,
 				3DBB36EE1C4CF7FD009864FD /* Assets.xcassets */,
 				3DBB36F01C4CF7FD009864FD /* Main.storyboard */,
+				3D81D0141DF94BFE003FD705 /* Property List.plist */,
+				3D81D0161DF94C90003FD705 /* KCAPResources.plist */,
 				3DBB36F31C4CF7FD009864FD /* Info.plist */,
 				3DBB36E81C4CF7FD009864FD /* Supporting Files */,
 			);
@@ -199,7 +205,7 @@
 		3DBB36DA1C4CF7FD009864FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = RFBrost;
 				TargetAttributes = {
 					3DBB36E11C4CF7FD009864FD = {
@@ -240,8 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D81D0151DF94BFE003FD705 /* Property List.plist in Resources */,
 				3DBB36EF1C4CF7FD009864FD /* Assets.xcassets in Resources */,
 				3DBB36F21C4CF7FD009864FD /* Main.storyboard in Resources */,
+				3D81D0171DF94C90003FD705 /* KCAPResources.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,13 +336,15 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -351,6 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -371,11 +382,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -390,6 +403,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -480,7 +494,7 @@
 				3DBB370B1C4CF7FD009864FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3DBB370C1C4CF7FD009864FD /* Build configuration list for PBXNativeTarget "Read_Property_List" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +503,7 @@
 				3DBB370E1C4CF7FD009864FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		3DBB370F1C4CF7FD009864FD /* Build configuration list for PBXNativeTarget "Read_Property_ListTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +512,7 @@
 				3DBB37111C4CF7FD009864FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		3DBB37121C4CF7FD009864FD /* Build configuration list for PBXNativeTarget "Read_Property_ListUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +521,7 @@
 				3DBB37141C4CF7FD009864FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
